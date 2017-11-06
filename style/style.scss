@@ -1449,6 +1449,7 @@ button.btn, input.btn {
         position: relative;
         display: flex;
         box-sizing: border-box;
+        flex-grow: 1;
         min-height: 404px;
         padding: 50px 50px 60px 50px;
         background-color: #ffffff;
@@ -1464,6 +1465,7 @@ button.btn, input.btn {
         position: relative;
         display: flex;
         flex-direction: column;
+        width: 100%;
         padding-right: 150px;
 
         justify-content: space-between;
@@ -1489,6 +1491,7 @@ button.btn, input.btn {
     &__text {
         margin: auto 0;
         font-size: 18px;
+        width: 100%;
         @media screen and (max-width: 720px) {
             font-size: 16px;
         }
@@ -1570,6 +1573,7 @@ button.btn, input.btn {
         display: flex;
         flex-direction: column;
         width: 32.4%;
+        flex-shrink: 0;
         margin-left: 30px;
         background-color: #ffffff;
         box-shadow: 0 3px 7px 1px rgba(56, 54, 47, 0.08);
@@ -3394,28 +3398,24 @@ button.btn, input.btn {
 }
 
 .variants {
-    &__title {
-    }
     &__items {
         margin-top: 20px;
-
-        column-count: 2;
-        column-gap: 90px;
-        @media screen and (max-width: 1025px) {
-            column-gap: 20px;
-        }
-        @media screen and (max-width: 720px) {
-            column-count: 1;
-            column-gap: 0;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     &__item {
         box-sizing: border-box;
         padding: 0 0 0 40px;
         transition: 0.2s all;
         font-size: 20px;
+        width: calc(50% - 45px);
         @media screen and (max-width: 1025px) {
             padding: 0;
+            width: calc(50% - 10px);
+        }
+        @media screen and (max-width: 720px) {
+            width: 100%;
         }
         &:hover {
             background-color: $gray;
@@ -3909,6 +3909,7 @@ button.btn, input.btn {
         padding: 0;
     }
     .col_scroll {
+        align-items: stretch;
         @media screen and (max-width: 998px) {
             flex-direction: column;
         }
@@ -3935,9 +3936,12 @@ button.btn, input.btn {
         }
     }
     &__right {
+        display: flex;
+        flex-direction: column;
         &__title {
             display: flex;
             min-height: 87px;
+            flex-shrink: 0;
             font-size: 18px;
             font-weight: 600;
             border-top: 1px solid rgba(#27304f, 0.15);
@@ -3949,7 +3953,7 @@ button.btn, input.btn {
     &__items {
         display: flex;
         flex-direction: column;
-        max-height: 50vh;
+        flex-grow: 1;
     }
     &__item {
         position: relative;
@@ -4420,7 +4424,7 @@ button.btn, input.btn {
 .subjects, .lessons {
     &__items {
         display: flex;
-        padding-bottom: 40px;
+        // padding-bottom: 40px;
 
         justify-content: center;
         flex-wrap: wrap;
@@ -4487,7 +4491,7 @@ button.btn, input.btn {
     .btn {
         display: flex;
         width: 221px;
-        margin: 20px auto 0;
+        margin: 0 auto 0;
     }
 }
 

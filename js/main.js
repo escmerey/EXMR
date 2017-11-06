@@ -94,6 +94,9 @@ jQuery(document).ready(function($) {
             modulesSwiper.slideTo($(this).index(), 300);
             tasksSwiper.slideTo($(this).index(), 300);
         }
+        //Помечаем активный модуль в плане подготовки
+        $('.plane__item').removeClass('active');
+        $('.plane__item:not(.disable):nth-child('+($(this).index()+1)+')').addClass('active');
     });
 
     //кастомный скроллбар

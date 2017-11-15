@@ -43,7 +43,8 @@ html * {
     max-height: 1000000px;
 }
 
-html, body {
+html,
+body {
     position: relative;
     overflow-x: hidden !important;
     height: 100%;
@@ -62,12 +63,16 @@ body {
     background: url('../images/main-bg-pattern.png') 0 0;
 }
 
-section, header, footer {
+section,
+header,
+footer {
     width: 100%;
     margin: 0 auto;
 }
 
-a, button, .callPopup {
+a,
+button,
+.callPopup {
     cursor: pointer;
     text-decoration: none;
     color: inherit;
@@ -76,12 +81,15 @@ a, button, .callPopup {
     }
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
     font-family: inherit;
     font-size: inherit;
 }
 
-input, textarea {
+input,
+textarea {
     @include placeholder(#000000, 0.5, 0.5s);
     &:hover {
         @include placeholder(#000000, 0.3, 0.5s);
@@ -255,7 +263,8 @@ b {
     }
 }
 
-button.btn, input.btn {
+button.btn,
+input.btn {
     display: block !important;
     text-align: center;
 }
@@ -465,7 +474,8 @@ button.btn, input.btn {
     &__input {
         position: relative;
         width: 100%;
-        input, textarea {
+        input,
+        textarea {
             box-sizing: border-box;
             width: 100%;
             height: 44px;
@@ -694,7 +704,8 @@ button.btn, input.btn {
         background-color: #ffffff;
 
         -khtml-user-select: none;
-        &:before, &:after {
+        &:before,
+        &:after {
             position: absolute;
             left: 0;
             width: 100%;
@@ -736,7 +747,8 @@ button.btn, input.btn {
     }
 }
 
-.radio, .checkbox {
+.radio,
+.checkbox {
     display: inline-flex;
     cursor: pointer;
 
@@ -752,14 +764,16 @@ button.btn, input.btn {
     input {
         display: none;
         &:checked {
-             ~ .radio__fake,  ~ .checkbox__fake {
+             ~ .radio__fake,
+             ~ .checkbox__fake {
                 &:after {
                     opacity: 1;
                 }
             }
         }
         &.error {
-             ~ .radio__fake,  ~ .checkbox__fake {
+             ~ .radio__fake,
+             ~ .checkbox__fake {
                 border-color: red;
             }
         }
@@ -811,7 +825,12 @@ button.btn, input.btn {
             margin-bottom: 0;
         }
     }
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         margin-bottom: 15px;
         padding-top: 5px;
         font-weight: 600;
@@ -890,13 +909,16 @@ button.btn, input.btn {
      > img {
         margin-bottom: 15px;
     }
-    b, strong {
+    b,
+    strong {
         font-weight: 600 !important;
     }
-    em, i {
+    em,
+    i {
         font-style: italic !important;
     }
-    s, strike {
+    s,
+    strike {
         text-decoration: line-through !important;
     }
     u {
@@ -1101,7 +1123,8 @@ button.btn, input.btn {
         margin-bottom: 20px;
         span {
             background-color: #000000;
-            &:after, &:before {
+            &:after,
+            &:before {
                 background-color: #000000;
             }
         }
@@ -1302,7 +1325,8 @@ button.btn, input.btn {
             font-weight: 400;
             color: #000000;
             border-color: $orange;
-            &:after, &:before {
+            &:after,
+            &:before {
                 position: absolute;
                 right: 0;
                 bottom: 0;
@@ -1449,12 +1473,12 @@ button.btn, input.btn {
         position: relative;
         display: flex;
         box-sizing: border-box;
-        flex-grow: 1;
         min-height: 404px;
         padding: 50px 50px 60px 50px;
         background-color: #ffffff;
         box-shadow: 0 3px 7px 1px rgba(56, 54, 47, 0.08);
 
+        flex-grow: 1;
         justify-content: space-between;
         @media screen and (max-width: 1366px) {
             min-height: 357px;
@@ -1489,9 +1513,9 @@ button.btn, input.btn {
         }
     }
     &__text {
+        width: 100%;
         margin: auto 0;
         font-size: 18px;
-        width: 100%;
         @media screen and (max-width: 720px) {
             font-size: 16px;
         }
@@ -1573,11 +1597,11 @@ button.btn, input.btn {
         display: flex;
         flex-direction: column;
         width: 32.4%;
-        flex-shrink: 0;
         margin-left: 30px;
         background-color: #ffffff;
         box-shadow: 0 3px 7px 1px rgba(56, 54, 47, 0.08);
 
+        flex-shrink: 0;
         flex-shrink: 0;
         @media screen and (max-width: 1280px) {
             margin-left: 17px;
@@ -2466,7 +2490,8 @@ button.btn, input.btn {
 
                 flex-wrap: wrap;
             }
-            img, svg {
+            img,
+            svg {
                 width: 14px;
                 height: 15px;
                 margin-left: 10px;
@@ -2504,7 +2529,8 @@ button.btn, input.btn {
             @media screen and (max-width: 1025px) {
                 font-size: 18px;
             }
-            img, svg {
+            img,
+            svg {
                 position: relative;
                 top: -2px;
                 margin-right: 15px;
@@ -3017,7 +3043,8 @@ button.btn, input.btn {
 
         flex-wrap: wrap;
         justify-content: space-between;
-        .radio, .checkbox {
+        .radio,
+        .checkbox {
             min-width: 150px;
             margin: 10px 0;
             @media screen and (max-width: 720px) {
@@ -3372,7 +3399,8 @@ button.btn, input.btn {
         &__wrap {
             position: relative;
             background-color: #fafbfc;
-            &:after, &:before {
+            &:after,
+            &:before {
                 position: absolute;
                 top: 0;
                 right: 100%;
@@ -3399,20 +3427,21 @@ button.btn, input.btn {
 
 .variants {
     &__items {
-        margin-top: 20px;
         display: flex;
+        margin-top: 20px;
+
         flex-wrap: wrap;
         justify-content: space-between;
     }
     &__item {
         box-sizing: border-box;
+        width: calc(50% - 45px);
         padding: 0 0 0 40px;
         transition: 0.2s all;
         font-size: 20px;
-        width: calc(50% - 45px);
         @media screen and (max-width: 1025px) {
-            padding: 0;
             width: calc(50% - 10px);
+            padding: 0;
         }
         @media screen and (max-width: 720px) {
             width: 100%;
@@ -3941,11 +3970,11 @@ button.btn, input.btn {
         &__title {
             display: flex;
             min-height: 87px;
-            flex-shrink: 0;
             font-size: 18px;
             font-weight: 600;
             border-top: 1px solid rgba(#27304f, 0.15);
 
+            flex-shrink: 0;
             align-items: center;
             justify-content: center;
         }
@@ -3953,6 +3982,7 @@ button.btn, input.btn {
     &__items {
         display: flex;
         flex-direction: column;
+
         flex-grow: 1;
     }
     &__item {
@@ -4004,6 +4034,7 @@ button.btn, input.btn {
     }
     &__item {
         width: 100%;
+
         &:hover {
             background-color: $gray;
         }
@@ -4019,10 +4050,20 @@ button.btn, input.btn {
             padding: 10px 35px;
 
             align-items: center;
+            @media screen and (max-width: 720px) {
+                padding: 15px 10px;
+
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
         }
         &__text {
             margin-right: auto;
             font-size: 18px;
+            @media screen and (max-width: 720px) {
+                width: 100%;
+                font-size: 15px;
+            }
         }
     }
     .btn {
@@ -4031,9 +4072,27 @@ button.btn, input.btn {
         flex-shrink: 0;
         &--greenempty {
             width: 208px;
+            @media screen and (max-width: 998px) {
+                width: 180px;
+            }
+            @media screen and (max-width: 720px) {
+                width: 49%;
+                height: 40px;
+                margin: 15px 0 0;
+                font-size: 12px;
+            }
         }
         &--orange {
             width: 251px;
+            @media screen and (max-width: 998px) {
+                width: 180px;
+            }
+            @media screen and (max-width: 720px) {
+                width: 49%;
+                height: 40px;
+                margin: 15px 0 0;
+                font-size: 12px;
+            }
         }
     }
 }
@@ -4141,7 +4200,8 @@ button.btn, input.btn {
             font-size: 18px;
             font-weight: 700;
         }
-        input, textarea {
+        input,
+        textarea {
             height: 36px;
             margin-bottom: 15px;
             border: none;
@@ -4421,7 +4481,8 @@ button.btn, input.btn {
     }
 }
 
-.subjects, .lessons {
+.subjects,
+.lessons {
     &__items {
         display: flex;
         // padding-bottom: 40px;
@@ -4438,6 +4499,7 @@ button.btn, input.btn {
         width: 20%;
         margin-bottom: 45px;
         cursor: pointer;
+        text-align: center;
 
         align-items: center;
         @media screen and (max-width: 720px) {
